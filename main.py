@@ -37,13 +37,13 @@ def nearestclass(neighbors):
     return sorter[0][0]
     # Model Evaluation
     def getAccuracy(testSet, prediction):
-    correct = 0
-    for x in range(len(testSet)):
-        if testSet[x][-1] == prediction[x]:
-            correct += 1
-    return 1.0 * correct / len(testSet)
+        correct = 0
+        for x in range(len(testSet)):
+            if testSet[x][-1] == prediction[x]:
+                correct += 1
+        return 1.0 * correct / len(testSet)
     # Feature Extraction
-    directory = '../input/gtzan-dataset-music-genre-classification/Data/genres_original'
+directory = '../input/gtzan-dataset-music-genre-classification/Data/genres_original'
 f = open("mydataset.dat", "wb")
 i = 0
 for folder in os.listdir(directory):
