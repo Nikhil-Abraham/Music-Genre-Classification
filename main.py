@@ -9,6 +9,8 @@ import math
 import pickle
 import random
 import operator
+
+print('Running ...')
 # Define a function to calculate distance between feature vectors, and to find neighbours.
 # define a function to get distance between feature vectors and find neighbors
 def getNeighbors(trainingset, instance, k):
@@ -36,14 +38,14 @@ def nearestclass(neighbors):
     sorter = sorted(classVote.items(), key=operator.itemgetter(1), reverse=True)
     return sorter[0][0]
     # Model Evaluation
-    def getAccuracy(testSet, prediction):
-        correct = 0
-        for x in range(len(testSet)):
-            if testSet[x][-1] == prediction[x]:
-                correct += 1
-        return 1.0 * correct / len(testSet)
+def getAccuracy(testSet, prediction):
+    correct = 0
+    for x in range(len(testSet)):
+        if testSet[x][-1] == prediction[x]:
+            correct += 1
+    return 1.0 * correct / len(testSet)
     # Feature Extraction
-directory = '../input/gtzan-dataset-music-genre-classification/Data/genres_original'
+directory = './Data/genres_original'
 f = open("mydataset.dat", "wb")
 i = 0
 for folder in os.listdir(directory):
@@ -108,7 +110,7 @@ print(accuracy1)
 from collections import defaultdict
 results = defaultdict(int)
 
-directory = "../input/gtzan-dataset-music-genre-classification/Data/genres_original"
+directory = "./Data/genres_original"
 
 i = 1
 for folder in os.listdir(directory):
