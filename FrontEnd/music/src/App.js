@@ -5,6 +5,8 @@ function App() {
   return (
     <div className="bg">
       <Header />
+      <div className="Center"><button>Record</button></div>
+     
     </div>
   );
 }

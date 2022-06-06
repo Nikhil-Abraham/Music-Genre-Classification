@@ -4,3 +4,20 @@
   height: 100vh;
   width: 100vw;
 }
+.Center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+button {
+  height: 40px;
+  background-color: #05445E;
+  border: .5px solid #75E6DA;
+  border-radius: 10px;
+  color: #fff;
+  padding: 8px;
+  box-shadow: 0 0 30px 0 #75E6DA,
+              0 0 30px 0 #75E6DA,
+              0 0 10px 0 #75E6DA inset;
+}
