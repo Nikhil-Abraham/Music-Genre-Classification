@@ -1,6 +1,5 @@
 .bg {
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-  position: absolute;
+  background-color: rgb(26, 25, 25);
   height: 100vh;
   width: 100vw;
 }
@@ -12,16 +11,17 @@
   position: relative;
 }
 img {
-  padding:1px;  
+  padding: 1px;
 }
 button {
   height: 100px;
-  background-color: #05445E;
-  border: .5px solid #75E6DA;
+  background-color: #05445e;
+  border: 0.5px solid #75e6da;
   border-radius: 50px;
-  color: #fff;
+  color: rgb(235, 235, 235);
   padding: 30px;
-  box-shadow: 0 0 30px 0 #75E6DA,
-              0 0 30px 0 #75E6DA,
-              0 0 10px 0 #75E6DA inset;
+  box-shadow: 0 0 30px 0 #75e6da, 0 0 30px 0 #75e6da, 0 0 10px 0 #75e6da inset;
+}
+
+.logo {
 }
