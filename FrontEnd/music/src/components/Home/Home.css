@@ -1,0 +1,31 @@
+.Home{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+
+.abstract{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    height: 590px;
+    width: 430px;
+}
+
+.Image {
+    margin-top: 110px;
+    margin-left: -70px;
+    height: 600px;
+    width: auto;
+}
+
+.TagLine{
+    margin-top: 300px;
+    margin-left: -170px;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    background: -webkit-linear-gradient(#a18cd1, #fbc2eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

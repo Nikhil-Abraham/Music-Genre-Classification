@@ -1,0 +1,38 @@
+.NavMenu{
+    margin-top: 190px;
+    padding: 20px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10%;
+    height: 700px;
+    color: #483E48FF;
+
+}
+
+a:link {
+    color: #483E48FF;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #483E48FF;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+    color: #483E48FF;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #483E48FF;
+    background-color: transparent;
+    text-decoration: underline;
+}
