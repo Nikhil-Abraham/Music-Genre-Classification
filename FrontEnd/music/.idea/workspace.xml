@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e7b68a-0a10-4144-8c42-c06b9b5fb6c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Nav/Nav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Nav/Nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Routes/Github.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Routes/Recent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Routes/Recent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Routes/Upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Genre/Genre.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Genre/Genre.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Tracks/Tracks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Tracks/Tracks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +68,8 @@
       <workItem from="1656166096394" duration="123000" />
       <workItem from="1656166358542" duration="454000" />
       <workItem from="1656167058636" duration="4634000" />
-      <workItem from="1656342584162" duration="860000" />
+      <workItem from="1656342584162" duration="5442000" />
+      <workItem from="1656350244253" duration="522000" />
     </task>
     <servers />
   </component>
