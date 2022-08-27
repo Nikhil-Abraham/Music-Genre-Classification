@@ -37,9 +37,7 @@ app.post("/api/upload", jsonParser, async function (req, res) {
     }
   }
 
-  setTimeout(() => {
-    res.send(resVal);
-  }, 2000);
+  res.status(201).send(JSON.stringify(resVal));
 });
 
 app.listen(8080, () => {
