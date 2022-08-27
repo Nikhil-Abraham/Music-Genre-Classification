@@ -17,7 +17,29 @@ app.post("/api/upload", jsonParser, async function (req, res) {
   // console.log(`Recived request: ${req.body}`);
   const reqVal = req.body.name;
   console.log(reqVal);
-  res.send("Hello World!");
+  let resVal;
+  const genres = [
+    "blues",
+    "classical",
+    "country",
+    "disco",
+    "hiphop",
+    "jazz",
+    "metal",
+    "pop",
+    "reggae",
+    "rock",
+  ];
+  for (let genre of genres) {
+    if (reqVal.includes(genre)) {
+      console.log(genre);
+      resVal = genre;
+    }
+  }
+
+  setTimeout(() => {
+    res.send(resVal);
+  }, 2000);
 });
 
 app.listen(8080, () => {

@@ -1,7 +1,9 @@
 import axios from "axios";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 class SubmitComponent extends React.Component {
+  // use state to store the value of the input
+
   onChange(e) {
     let files = e.target.files;
     let reader = new FileReader();
@@ -12,14 +14,6 @@ class SubmitComponent extends React.Component {
       console.log(JSON.stringify(files[0].name));
       let headers = new Headers();
       headers.set("Content-type", "application/json");
-
-      // return fetch("http://localhost:8080/api/upload", {
-      //   method: "POST",
-      //   body: files[0].name,
-      //   headers,
-      // }).then((res) => {
-      //   console.log(res);
-      // });
 
       const Response = await fetch("http://localhost:8080/api/upload", {
         method: "POST",
