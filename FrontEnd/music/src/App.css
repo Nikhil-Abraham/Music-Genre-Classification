@@ -1,6 +1,4 @@
-
-.bg{
-    display: flex;
-    background-color: aliceblue;
-    justify-content: space-between;
+.bg {
+  display: flex;
+  justify-content: space-between;
 }

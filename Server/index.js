@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const { cnn } = require("./middlewares/algo");
 
 const app = express();
 const bodyParser = require("body-parser");
@@ -15,30 +16,17 @@ app.use(
 
 app.post("/api/upload", jsonParser, async function (req, res) {
   // console.log(`Recived request: ${req.body}`);
-  const reqVal = req.body.name;
-  console.log(reqVal);
-  let resVal;
-  const genres = [
-    "blues",
-    "classical",
-    "country",
-    "disco",
-    "hiphop",
-    "jazz",
-    "metal",
-    "pop",
-    "reggae",
-    "rock",
-  ];
-  for (let genre of genres) {
-    if (reqVal.includes(genre)) {
-      console.log(genre);
-      resVal = genre;
-    }
-  }
 
-  res.status(201).send(JSON.stringify(resVal));
+  const Data = req.body.name;
+
+  setTimeout( () => {
+    const genre = cnn(Data);
+
+    res.status(200).send(JSON.stringify(genre));
+  },4000)
 });
+
+console.log(cnn);
 
 app.listen(8080, () => {
   // eslint-disable-next-line no-console
