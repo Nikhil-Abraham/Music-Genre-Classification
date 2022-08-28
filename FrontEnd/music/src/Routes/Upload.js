@@ -1,13 +1,16 @@
 import Nav from "../components/Nav/Nav";
 import SubmitComponent from "../components/SubmitComponent/SubmitComponent";
-import "../index.css";
+import "./Upload.css";
+
 
 function Upload() {
     return (
         <div>
-            <Nav />
             <div className="Upload">
-                <SubmitComponent />
+            <Nav />
+                <div className="button">
+                    <SubmitComponent />
+                </div>
             </div>
         </div>
     );

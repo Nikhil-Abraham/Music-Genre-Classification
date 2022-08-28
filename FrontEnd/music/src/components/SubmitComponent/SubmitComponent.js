@@ -1,17 +1,18 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import "../../index.css";
+import "./Submit.css";
 
 class SubmitComponent extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      genre: "test",
+      genre: "",
     };
 
     this.onChange = this.onChange.bind(this);
   }
-
   // use state to store the value of the input
 
   onChange(e) {
@@ -45,11 +46,34 @@ class SubmitComponent extends React.Component {
 
   render() {
     return (
-      <div>
-        <div onSubmit={this.onFormSubmit}>
-          <input type="file" onChange={(e) => this.onChange(e)} />
+      /*<div className="abs">
+      <img src={require('../../Assets/abstract.jpeg')} alt="abstract" className="Image" />
+      </div>*/
+      <div className="Submit">
+        <div className="but-area">
+          <div onSubmit={this.onFormSubmit}>
+            <div className="chosefile">
+              <p>
+                <label>
+                  <input
+                    type="file"
+                    hidden
+                    onChange={(e) => this.onChange(e)}
+                  />
+                  upload
+                </label>
+              </p>
+            </div>
+          </div>
         </div>
-        <h1>{this.state.genre}</h1>
+        <div className="fart">
+          <img
+            src={require("../../Assets/abstract.jpeg")}
+            alt="abstract"
+            className="Image"
+          />
+          <div className="jatre">{this.state.genre}</div>
+        </div>
       </div>
     );
   }
