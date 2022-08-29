@@ -1,6 +1,5 @@
 async function cnn(data) {
   const reqVal = data;
-  console.log("Running CNN algorithm !");
   let resVal;
   const genres = [
     "blues",

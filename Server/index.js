@@ -19,11 +19,11 @@ app.post("/api/upload", jsonParser, async function (req, res) {
 
   const Data = req.body.name;
 
-  setTimeout( () => {
-    const genre = cnn(Data);
+  setTimeout(async () => {
+    const genre = await cnn(Data);
 
     res.status(200).send(JSON.stringify(genre));
-  },4000)
+  }, 4000);
 });
 
 console.log(cnn);

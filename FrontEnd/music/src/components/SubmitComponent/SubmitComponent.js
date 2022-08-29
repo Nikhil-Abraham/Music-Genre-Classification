@@ -21,6 +21,7 @@ class SubmitComponent extends React.Component {
     this.setState({
       isLoading: true,
     });
+
     this.state.isLoading = true;
     this.state.genre = "loading ...";
 
